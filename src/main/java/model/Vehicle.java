@@ -24,7 +24,7 @@ public class Vehicle {
         this.plateNumber = "unknown";
     }
 
-    /*** getters  and setters ***/
+
 
     public String getMake() {
         return make;
