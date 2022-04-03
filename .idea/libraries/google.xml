@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="google">
+    <CLASSES />
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/Downloads/gson-2.9.0-javadoc.jar!/com.google.gson/com/google" />
+    </SOURCES>
+    <jarDirectory url="jar://$USER_HOME$/Downloads/gson-2.9.0-javadoc.jar!/com.google.gson/com/google" recursive="false" type="SOURCES" />
+  </library>
+</component>
