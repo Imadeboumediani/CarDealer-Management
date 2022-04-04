@@ -5,14 +5,14 @@ import java.util.List;
 public class Concessionary {
     private String name;
     private String adress;
-    List<Collabs> CollabsList;
-    List<Cars> CarsList;
-    List<Clients> ClientsList;
-    List<Bills> BillsList;
+    List<Collab> CollabsList;
+    List<Car> CarsList;
+    List<Client> ClientsList;
+    List<Bill> BillsList;
 
     public Concessionary(){};
 
-    public Concessionary(String name, String adress, List<Collabs> collabsList, List<Cars> carsList, List<Clients> clientsList, List<Bills> billsList) {
+    public Concessionary(String name, String adress, List<Collab> collabsList, List<Car> carsList, List<Client> clientsList, List<Bill> billsList) {
         this.name = name;
         this.adress = adress;
         CollabsList = collabsList;
@@ -37,35 +37,35 @@ public class Concessionary {
         this.adress = adress;
     }
 
-    public List<Collabs> getCollabsList() {
+    public List<Collab> getCollabsList() {
         return CollabsList;
     }
 
-    public void setCollabsList(List<Collabs> collabsList) {
+    public void setCollabsList(List<Collab> collabsList) {
         CollabsList = collabsList;
     }
 
-    public List<Cars> getCarsList() {
+    public List<Car> getCarsList() {
         return CarsList;
     }
 
-    public void setCarsList(List<Cars> carsList) {
+    public void setCarsList(List<Car> carsList) {
         CarsList = carsList;
     }
 
-    public List<Clients> getClientsList() {
+    public List<Client> getClientsList() {
         return ClientsList;
     }
 
-    public void setClientsList(List<Clients> clientsList) {
+    public void setClientsList(List<Client> clientsList) {
         ClientsList = clientsList;
     }
 
-    public List<Bills> getBillsList() {
+    public List<Bill> getBillsList() {
         return BillsList;
     }
 
-    public void setBillsList(List<Bills> billsList) {
+    public void setBillsList(List<Bill> billsList) {
         BillsList = billsList;
     }
 

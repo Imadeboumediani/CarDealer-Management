@@ -1,16 +1,16 @@
 package model;
 
-public class Bills {
+public class Bill {
 
     private String id;
-    Clients client;
-    Cars car;
-    Collabs collaborRelated;
+    Client client;
+    Car car;
+    Collab collaborRelated;
     private String date;
 
-    public Bills(){}
+    public Bill(){}
 
-    public Bills(String id, Clients client, Cars car, Collabs collaborRelated, String date) {
+    public Bill(String id, Client client, Car car, Collab collaborRelated, String date) {
         this.id = id;
         this.client = client;
         this.car = car;
@@ -26,27 +26,27 @@ public class Bills {
         this.id = id;
     }
 
-    public Clients getClient() {
+    public Client getClient() {
         return client;
     }
 
-    public void setClient(Clients client) {
+    public void setClient(Client client) {
         this.client = client;
     }
 
-    public Cars getCar() {
+    public Car getCar() {
         return car;
     }
 
-    public void setCar(Cars car) {
+    public void setCar(Car car) {
         this.car = car;
     }
 
-    public Collabs getCollaborRelated() {
+    public Collab getCollaborRelated() {
         return collaborRelated;
     }
 
-    public void setCollaborRelated(Collabs collaborRelated) {
+    public void setCollaborRelated(Collab collaborRelated) {
         this.collaborRelated = collaborRelated;
     }
 

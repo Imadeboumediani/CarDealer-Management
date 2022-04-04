@@ -1,6 +1,6 @@
 package model;
 
-public class Cars extends Vehicle{
+public class Car extends Vehicle{
     private int numDoors;
     private boolean automatic;
     private String color;
@@ -11,9 +11,9 @@ public class Cars extends Vehicle{
 
     /*** constructors ***/
 
-    public Cars(){}
+    public Car(){}
 
-    public Cars(int numDoors, boolean automatic, String color, String maxSpeed, int price, int year) {
+    public Car(int numDoors, boolean automatic, String color, String maxSpeed, int price, int year) {
         this.numDoors = numDoors;
         this.automatic = automatic;
         this.color = color;
@@ -22,7 +22,7 @@ public class Cars extends Vehicle{
         this.year = year;
     }
 
-    public Cars(String make, String model, int year, int numWheels, int numDoors, boolean automatic, String color, String maxSpeed, int price, int year1) {
+    public Car(String make, String model, int year, int numWheels, int numDoors, boolean automatic, String color, String maxSpeed, int price, int year1) {
         super(make, model, year, numWheels);
         this.numDoors = numDoors;
         this.automatic = automatic;

@@ -2,23 +2,23 @@ package model;
 
 import enums.SexTypeEnum;
 
-public class Clients extends Person {
+public class Client extends Person {
     private String email;
     private String city;
     private String password;
     private int phoneNum;
 
-    public Clients() {
+    public Client() {
     }
 
-    public Clients(String email, String city, String password, int phonenumber) {
+    public Client(String email, String city, String password, int phonenumber) {
         this.email = email;
         this.city = city;
         this.password = password;
         this.phoneNum = phonenumber;
     }
 
-    public Clients(String firstname, String lastname, int age, SexTypeEnum sex, String email, String city, String password, int phonenumber) {
+    public Client(String firstname, String lastname, int age, SexTypeEnum sex, String email, String city, String password, int phonenumber) {
         super(firstname, lastname, age, sex);
         this.email = email;
         this.city = city;

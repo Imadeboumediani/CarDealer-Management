@@ -3,7 +3,7 @@ package model;
 import enums.GradeEnum;
 import enums.SexTypeEnum;
 
-public class Collabs extends Person{
+public class Collab extends Person{
 
     private GradeEnum grade;
     private String email;
@@ -13,9 +13,9 @@ public class Collabs extends Person{
 
 
     /*** constructors ***/
-    public Collabs(){}
+    public Collab(){}
 
-    public Collabs(String firstname, String lastname, int age, SexTypeEnum sex, GradeEnum grade, String email, String adress, int emp_id, int salary) {
+    public Collab(String firstname, String lastname, int age, SexTypeEnum sex, GradeEnum grade, String email, String adress, int emp_id, int salary) {
         super(firstname, lastname, age, sex);
         this.grade = grade;
         this.email = email;
@@ -24,7 +24,7 @@ public class Collabs extends Person{
         this.salary = salary;
     }
 
-    public Collabs(GradeEnum grade, String email, String adress, int emp_id, int salary) {
+    public Collab(GradeEnum grade, String email, String adress, int emp_id, int salary) {
         this.grade = grade;
         this.email = email;
         this.adress = adress;
