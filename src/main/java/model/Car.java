@@ -1,6 +1,7 @@
 package model;
 
 public class Car extends Vehicle{
+    private String id;
     private int numDoors;
     private boolean automatic;
     private String color;
@@ -13,7 +14,8 @@ public class Car extends Vehicle{
 
     public Car(){}
 
-    public Car(int numDoors, boolean automatic, String color, String maxSpeed, int price) {
+    public Car(String id,int numDoors, boolean automatic, String color, String maxSpeed, int price) {
+        this.id=id;
         this.numDoors = numDoors;
         this.automatic = automatic;
         this.color = color;
@@ -22,8 +24,9 @@ public class Car extends Vehicle{
 
     }
 
-    public Car(String make, String model, int year, int numWheels, int numDoors, boolean automatic, String color, String maxSpeed, int price ) {
+    public Car(String make, String model, int year, int numWheels,String id, int numDoors, boolean automatic, String color, String maxSpeed, int price ) {
         super(make, model, year, numWheels);
+        this.id =id;
         this.numDoors = numDoors;
         this.automatic = automatic;
         this.color = color;
@@ -32,6 +35,14 @@ public class Car extends Vehicle{
     }
 
     /*** getters  and setters ***/
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
     public int getNumDoors() {
         return numDoors;
     }
@@ -72,17 +83,16 @@ public class Car extends Vehicle{
         this.price = price;
     }
 
-
     /*** printing to String ***/
     @Override
     public String toString() {
-        return "Cars{" +
-                "numDoors=" + numDoors +
+        return "Car{" +
+                "id='" + id + '\'' +
+                ", numDoors=" + numDoors +
                 ", automatic=" + automatic +
                 ", color='" + color + '\'' +
                 ", maxSpeed='" + maxSpeed + '\'' +
                 ", price=" + price +
                 '}';
     }
-
 }

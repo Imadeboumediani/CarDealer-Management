@@ -1,14 +1,30 @@
+import business.ConcessionnaryBusinessImpl;
+import data.BillsDataMock;
+import data.CarsDataMock;
+import data.ClientsDataMock;
+import data.CollabsDataMock;
 import helper.Helper;
-import model.Car;
+import model.Concessionary;
 
+import java.util.List;
 
 
 public class Main {
     public static void main (String[] args){
 
-          Car bm= new Car("Bmw","Serie1",2012,4,5,true,"Black","180",20000);
+        Concessionary Test = new Concessionary(
+                "CarDealer 29",
+                "19 rue de loin Brest",
+                CollabsDataMock.getCollabs(),
+                CarsDataMock.getCars(),
+                ClientsDataMock.getClients(),
+                BillsDataMock.getBills()
+        );
 
 
-        Helper.generateJson(bm);
+        ConcessionnaryBusinessImpl concessionbus = new ConcessionnaryBusinessImpl();
+        List<Concessionary> concession = concessionbus.getList();
+
+        Helper.generateJson(concession);
     }
 }

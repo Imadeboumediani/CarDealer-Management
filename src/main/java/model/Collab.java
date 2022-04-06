@@ -4,7 +4,6 @@ import enums.GradeEnum;
 import enums.SexTypeEnum;
 
 public class Collab extends Person{
-
     private GradeEnum grade;
     private String email;
     private String adress;
@@ -33,6 +32,8 @@ public class Collab extends Person{
     }
 
     /*** getters  and setters ***/
+
+
     public GradeEnum getGrade() {
         return grade;
     }
@@ -76,8 +77,8 @@ public class Collab extends Person{
     /*** print into String ***/
     @Override
     public String toString() {
-        return "Collabs{" +
-                "grade=" + grade +
+        return "Collab{" +
+                ", grade=" + grade +
                 ", email='" + email + '\'' +
                 ", adress='" + adress + '\'' +
                 ", emp_id=" + emp_id +
