@@ -6,30 +6,29 @@ public class Car extends Vehicle{
     private String color;
     private String maxSpeed;
     private int price;
-    private int year;
+
 
 
     /*** constructors ***/
 
     public Car(){}
 
-    public Car(int numDoors, boolean automatic, String color, String maxSpeed, int price, int year) {
+    public Car(int numDoors, boolean automatic, String color, String maxSpeed, int price) {
         this.numDoors = numDoors;
         this.automatic = automatic;
         this.color = color;
         this.maxSpeed = maxSpeed;
         this.price = price;
-        this.year = year;
+
     }
 
-    public Car(String make, String model, int year, int numWheels, int numDoors, boolean automatic, String color, String maxSpeed, int price, int year1) {
+    public Car(String make, String model, int year, int numWheels, int numDoors, boolean automatic, String color, String maxSpeed, int price ) {
         super(make, model, year, numWheels);
         this.numDoors = numDoors;
         this.automatic = automatic;
         this.color = color;
         this.maxSpeed = maxSpeed;
         this.price = price;
-        this.year = year1;
     }
 
     /*** getters  and setters ***/
@@ -73,15 +72,6 @@ public class Car extends Vehicle{
         this.price = price;
     }
 
-    @Override
-    public int getYear() {
-        return year;
-    }
-
-    @Override
-    public void setYear(int year) {
-        this.year = year;
-    }
 
     /*** printing to String ***/
     @Override
@@ -92,7 +82,7 @@ public class Car extends Vehicle{
                 ", color='" + color + '\'' +
                 ", maxSpeed='" + maxSpeed + '\'' +
                 ", price=" + price +
-                ", year=" + year +
                 '}';
     }
+
 }

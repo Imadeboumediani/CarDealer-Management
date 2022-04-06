@@ -8,7 +8,7 @@ public class Vehicle {
     private int kilometers;
     private String plateNumber;
 
-
+    /*** constructors ***/
     public Vehicle() {
     }
 

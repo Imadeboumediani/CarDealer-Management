@@ -10,6 +10,7 @@ public class Concessionary {
     List<Client> ClientsList;
     List<Bill> BillsList;
 
+    /*** constructors ***/
     public Concessionary(){};
 
     public Concessionary(String name, String adress, List<Collab> collabsList, List<Car> carsList, List<Client> clientsList, List<Bill> billsList) {
@@ -20,6 +21,8 @@ public class Concessionary {
         ClientsList = clientsList;
         BillsList = billsList;
     }
+
+    /*** getters  and setters ***/
 
     public String getName() {
         return name;
@@ -69,6 +72,7 @@ public class Concessionary {
         BillsList = billsList;
     }
 
+    /*** printing to String ***/
     @Override
     public String toString() {
         return "Concessionary{" +
